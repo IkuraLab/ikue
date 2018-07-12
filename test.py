@@ -1,5 +1,8 @@
 import discord
 import asyncio
+import sys,os
+sys.path.append(os.pardir)
+import ikue
 client = discord.Client()
 
 @client.event
@@ -16,4 +19,4 @@ async def on_message(message):
             m = "hi!" + message.author.name + "!"
             await client.send_message(message.channel, m)
 
-client.run("")
+client.run(ikue.token())
