@@ -1,7 +1,7 @@
-import discord
-import asyncio
 import sys,os
 sys.path.append(os.pardir)
+import discord
+import asyncio
 import ikue
 client = discord.Client()
 
